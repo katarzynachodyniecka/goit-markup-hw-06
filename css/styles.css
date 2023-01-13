@@ -16,13 +16,11 @@
     --transition-set: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-::after,
-::before {
-    box-sizing: border-box;
-}
+
 body {
     font-family: "Roboto", sans-serif;
     color: var(--brand-color-black);
@@ -102,6 +100,7 @@ ul {
 }
 
 .header-link:hover,
+.header-link:active,
 .header-link:focus {
     color: var(--brand-color-blue);
 }
@@ -444,7 +443,6 @@ ul {
 
 .footer-social-icon {
     background-color: var(--footer-social-icon-bg);
-    /* color: var(--brand-color-white); */
     fill: var(--brand-color-white);
 }
 
@@ -469,22 +467,15 @@ ul {
     padding: 12px;
     font-size: 0;
     border-radius: 50%;
-    color: currentColor;
+    color: var(--brand-color-grey-icon);
     transition: background-color var(--transition-set);
 }
-/* .social-icon-svg:hover,
-.social-icon-svg:focus {
-    fill: var(--brand-color-white);
-} */
+
 .social-icon:hover,
 .social-icon:focus {
     background-color: var(--brand-color-blue);
 }
-/* .social-icon:hover,
-.social-icon:focus {
-    background-color: var(--brand-color-blue);
-    fill: var(--brand-color-white);
-} */
+
 .social-icon:hover .social-icon-svg {
     fill: var(--brand-color-white);
 }
@@ -652,6 +643,11 @@ ul {
     outline: none;
 }
 
+.modal-form-input:hover .modal-form-icon,
+.modal-form-input:active .modal-form-icon,
+.modal-form-input:focus .modal-form-icon {
+    fill: var(--brand-color-blue);
+}
 .modal-form-textarea {
     height: 120px;
     resize: none;
@@ -709,7 +705,7 @@ portolio.html
 .portfolio-button-filter {
     background-color: var(--brand-color-lightgrey);
     border-radius: 4px;
-    border-color: var(--brand-color-lightgrey);
+    border: 0px;
 
     font-family: "Roboto";
     font-weight: 500;
