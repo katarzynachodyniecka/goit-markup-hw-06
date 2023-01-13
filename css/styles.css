@@ -639,12 +639,23 @@ ul {
     border: 1px solid var(--brand-color-blue);
     outline: none;
 }
+/*metoda 1*/
 
-.modal-form-input:hover .modal-form-icon,
-.modal-form-input:active .modal-form-icon,
-.modal-form-input:focus .modal-form-icon {
+/* .modal-from-input + .modal-form-icon {
     fill: var(--brand-color-blue);
 }
+
+.modal-from-input:active + .modal-form-icon {
+    fill: var(--brand-color-blue);
+} */
+/*metoda 2*/
+.modal-form-label:focus-within {
+    fill: var(--brand-color-blue);
+}
+.modal-form-label:focus-within .modal-form-icon {
+    fill: var(--brand-color-blue);
+}
+
 .modal-form-textarea {
     height: 120px;
     resize: none;
