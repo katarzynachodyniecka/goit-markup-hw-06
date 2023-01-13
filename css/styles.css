@@ -670,18 +670,46 @@ ul {
     cursor: pointer;
 }
 
-.modal-form-check {
-    display: block;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.8;
-    color: var(--brand-color-grey);
+/*poczatek*/
+.modal-form-agreement-checkbox {
+    position: absolute;
+    height: 15px;
+    width: 16px;
+    opacity: 0;
 }
 
-.modal-link {
+.modal-form-agreement-custom-checkbox,
+.modal-form-agreement-custom-checkbox-checked {
+    margin-right: 8px;
+    vertical-align: text-top;
+}
+
+.modal-form-agreement-custom-checkbox {
+    fill: var(--brand-color-black);
+}
+
+.modal-form-agreement-custom-checkbox-checked {
+    display: none;
+}
+
+.modal-form-agreement-checkbox:checked
+    ~ .modal-form-agreement-custom-checkbox-checked {
+    display: inline-block;
+}
+
+.modal-form-agreement-checkbox:checked ~ .modal-form-agreement-custom-checkbox {
+    display: none;
+}
+
+.modal-form-agreement-label {
+    color: var(--brand-color-grey-icon);
+    font-size: 14px;
+}
+
+.modal-form-link {
     color: var(--brand-color-blue);
 }
+/*koniec*/
 /* 
 
 

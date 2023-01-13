@@ -713,9 +713,7 @@
             <div class="modal-box">
                 <button type="button" class="modal-close-btn" data-modal-close>
                     <svg class="modal-close-btn-x" width="18" height="18">
-                        <use
-                            href="./images/main/icons.svg#icon-close-icon"
-                        ></use>
+                        <use href="./images/main/close-btn.svg#close-btn"></use>
                     </svg>
                 </button>
                 <div class="modal-container">
@@ -770,21 +768,44 @@
                                 class="modal-form-input modal-form-textarea"
                             ></textarea>
                         </label>
-                        <label class="modal-form-check">
+                        <div class="modal-form-agreement-box">
                             <input
                                 type="checkbox"
-                                name="accept-rules"
-                                value="accept-rules"
+                                name="policy-agreement"
+                                id="policy-agreement"
+                                class="modal-form-agreement-checkbox"
+                                value="agreed"
+                                required
                             />
-                            Oświadczam iż akceptuję
-                            <a href="#" target="_top" class="modal-link"
-                                >Regulamin</a
+                            <svg
+                                width="16"
+                                height="15"
+                                class="modal-form-agreement-custom-checkbox"
                             >
-                            i
-                            <a href="#" target="_top" class="modal-link"
-                                >Politykę Prywatności</a
-                            >.
-                        </label>
+                                <use
+                                    href="./images/main/icons.svg#icon-empty-checkbox"
+                                ></use>
+                            </svg>
+                            <svg
+                                width="16"
+                                height="15"
+                                class="modal-form-agreement-custom-checkbox-checked"
+                            >
+                                <use
+                                    href="./images/main/icons.svg#icon-icon-check"
+                                ></use>
+                            </svg>
+                            <label
+                                for="policy-agreement"
+                                class="modal-form-agreement-label"
+                                >Oświadczam iż akceptuję
+                                <a href="" class="modal-form-link">Regulamin</a>
+                                i
+                                <a href="" class="modal-form-link"
+                                    >Politykę Prywatności</a
+                                >.</label
+                            >
+                        </div>
 
                         <button type="submit" class="modal-form-btn">
                             Wyślij
