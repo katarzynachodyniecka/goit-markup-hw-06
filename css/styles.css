@@ -566,9 +566,6 @@ ul {
     border-radius: 4px;
 }
 
-.modal-box:hover {
-    outline: 1px solid var(--brand-color-blue);
-}
 .modal-close-btn {
     position: absolute;
     right: 8px;
@@ -670,7 +667,6 @@ ul {
     cursor: pointer;
 }
 
-/*poczatek*/
 .modal-form-agreement-checkbox {
     position: absolute;
     height: 15px;
@@ -709,7 +705,6 @@ ul {
 .modal-form-link {
     color: var(--brand-color-blue);
 }
-/*koniec*/
 /* 
 
 
